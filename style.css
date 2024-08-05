@@ -1,0 +1,20 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    margin: 5px;
+    padding: 5px;
+    color: black;
+    text-align: center;
+}
+p{
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
