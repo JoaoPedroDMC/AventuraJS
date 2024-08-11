@@ -4,39 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=New+Rocker&display=swap" rel="stylesheet">
     <title>AventuraJS</title>
 </head>
 <body>
-    <div class="I">
+    <div class="passo ativo" id="passo-0">
         <h1>O Início da aventura...</h1>
         <p>Em uma bela manhã de sexta-feira, você recebe uma carta de um avô abastado, porem rico... A carta dizia:</p>
         <p><i>Caro neto, se você está lendo essa carta saiba que já estou morto, sei que isso é estranho, mas eu tenho que deixar algo para próximas gerações por isso preciso que venha a minha casa pegar minha herança</i></p>
-        <button>Casa, dormir...</button>
-        <button>Aventura!</button>
+        <button class="btn-proximo" data-proximo="1">Casa, dormir...</button>
+        <button class="btn-proximo" data-proximo="2">Aventura!</button>
     </div><!--inicio-->
-    <div class="VPC">
+    <div class="passo" id="passo-1">
         <h1>Lar doce lar...</h1>
+        <img src="1.jpg">
         <p>Você volta feliz para casa ignorando a carta de seu avô falecido.</p>
     </div><!--voltar para casa-->
-    <div class="AV">
+    <div class="passo" id="passo-2">
+        <h1>"Masmorra"</h1>
+        <img src="2.jpg">
         <p>Chegando na casa de seu vô, logo chega em seu escritório encontrando uma nova carta.</p>
         <p><i>Caro neto. em cima de minha mesa a um computador, que assim que for iniciado vai encaminhá-lo para um enigma, que se acertado, o computador passara todo meu dinheiro para você, mas se errado irá desligar para sempre, e a polícia irá aparecer...</i></p>
         <p>Você liga o computador esperando o enigma, aparecendo:</p>
         <p>Tenho rabo, mas não sou cão. Não tenho asas, mas sei voar. Se me largarem, não subo. Mas saio ao vento a brincar. Quem sou eu?</p>
-        <button>Pipa</button>
-        <button>Balão</button>
+        <button class="btn-proximo" data-proximo="4">Pipa</button>
+        <button class="btn-proximo" data-proximo="3">Balão</button>
     </div><!--Aventura-->
-    <div class="VPCC">
+    <div class="passo" id="passo-3">
         <h1>Fuga para casa</h1>
+        <img src="1.jpg">
         <p>Você erra a senha e o alarme toca, com medo de não conseguir o que aconteceu para polícia, você foge para sua casa</p>
     </div><!--voltar para casa correndo-->
-    <div class="AEGT">
+    <div class="passo" id="passo-4">
         <h1>Grande tesouro!</h1>
+        <img src="3.png">
         <p>Você acerta a senha, em seu celular você recebe uma mensagem do banco em seu celular, a mensagem dizia:</p>
         <p>Caro senhor ------, estamos lhe alertando que as dividas vindas do senhor ------ seu avô, foram transferidas para você. Toda a dívida é de R$:69.870,00 (sessenta e nove mil oitocentos e setenta) reais.</p>
         <p>Você enlouquece de raiva dizendo:</p>
         <p>Velho desgraçado!!!!!!!</p>
-    </div><!--Acetou o enigma e ganhou o tesouro-->
+    </div><!--Acertou o enigma e ganhou o tesouro-->
 
     <script src="sketch.js"></script>
 </body>
