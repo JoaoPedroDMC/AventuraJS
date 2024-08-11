@@ -2,14 +2,18 @@
     padding: 0px;
     margin: 0px;
 }
+:root{
+    --cor1: rgb(114, 90, 255);
+    --cor2: rgb(60, 25, 255);
+}
 body{
-    background-color: gray;
+    background-color: var(--cor1);
     font-family: Arial, Helvetica, sans-serif;
 }
 h1{
     margin: 5px;
     padding: 5px;
-    color: black;
+    color: var(--cor2);
     text-align: center;
 }
 p{
@@ -17,4 +21,26 @@ p{
     padding: 5px;
     color: white;
     text-align: center;
+}
+button{
+    color: var(--cor2);
+    background-color: white;
+    width: 250px;
+    height: 30px;
+    border: solid;
+    border-radius: 5px;
+    border: gray;
+
+}
+button:hover{
+    color: white;
+    background-color: gray;
+}
+div{
+    position: absolute;
+    height: auto;
+    width: 600px;
+    text-align: center;
+    top: 20%;
+    left: 30%;
 }
